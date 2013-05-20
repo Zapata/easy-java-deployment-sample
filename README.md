@@ -26,12 +26,12 @@ You should have a "Hello World" when connecting to [http://localhost:8080/](http
 How it works
 ------------
 
-Core and webapp application are dummy archetype maven applications.
+Core and webapp application are dummy maven archetype applications.
 
 Distrib module will:
 
   - use appassembler-maven-plugin to build two deamon applications (using [Java Service Wrapper](http://wrapper.tanukisoftware.com/)).
-  - on the fly download of Jetty Runner, used to run the webapp application.
+  - on the fly download of [Jetty Runner](http://wiki.eclipse.org/Jetty/Howto/Using_Jetty_Runner), used to run the webapp application.
   - build a tar.gz with full application installation (use maven-assembly-plugin).
   - use [Vagrant](http://www.vagrantup.com/) to build easely target VM.
      - see Vagrantfile for reproducible VM setup.
